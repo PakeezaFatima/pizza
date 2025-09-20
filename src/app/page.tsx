@@ -13,11 +13,12 @@ export default function Home() {
         {/* Pizza Card */}
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-4">
           <Image
-            src="/pizza.jpg"
+            src="/pizza.jpg"    // ✅ Must be inside /public
             alt="Pizza"
             width={300}
             height={200}
             className="rounded-xl mx-auto"
+            priority
           />
           <h3 className="text-xl font-bold mt-4 text-red-500">Delicious Pizza</h3>
           <p className="text-gray-600">Cheesy, hot & fresh from the oven.</p>
@@ -26,7 +27,7 @@ export default function Home() {
         {/* Burger Card */}
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-4">
           <Image
-            src="/burger.jpg"
+            src="/burger.jpg"   // ✅ Must be inside /public
             alt="Burger"
             width={300}
             height={200}
@@ -39,7 +40,7 @@ export default function Home() {
         {/* Drinks Card */}
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-4">
           <Image
-            src="/drinks.jpg"
+            src="/drinks.jpg"   // ✅ Must be inside /public
             alt="Drinks"
             width={300}
             height={200}
